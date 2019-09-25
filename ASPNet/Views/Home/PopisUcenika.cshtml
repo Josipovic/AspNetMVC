@@ -1,0 +1,10 @@
+﻿@Model List<string>
+@{
+    ViewBag.Title = "PopisUcenika";
+}
+
+<h2>Popis svih ucenika:</h2>
+
+@*@foreach (var u in (List<string>)ViewData["ucenici"]) { <h3>@u</h3>}*@
+
+    @foreach (var u in @Model) { <h3>@u</h3>}

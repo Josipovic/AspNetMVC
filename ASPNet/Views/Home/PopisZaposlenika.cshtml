@@ -1,0 +1,8 @@
+﻿@Model List<ASPNet.Models.Zaposlenik>
+@{
+    ViewBag.Title = "PopisZaposlenika";
+}
+
+<h2>Popis svih zaposlenika</h2>
+
+    @foreach (var z in @Model) { <h1>@z.Ime @z.Prezime @z.Placa</h1> }
